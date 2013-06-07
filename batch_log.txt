@@ -1,0 +1,1 @@
+2013-06-07 13:42:08,102 - INFO: check_messages.py last checked msg_id -> 8286
