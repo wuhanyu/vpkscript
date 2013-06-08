@@ -76,7 +76,7 @@ def login():
 
 def saveSoundByUrl(url, mid):
     response = urllib2.urlopen(url)
-    fout = open( "C:\\AppServ\\www\\sound\\ori\\" + mid + ".mp3", 'wb')
+    fout = open( "C:\\Program Files\\Apache Software Foundation\\Apache2.2\\htdocs\\sound\\ori\\" + mid + ".mp3", 'wb')
     fout.write(response.read())
     fout.close()
 
@@ -87,7 +87,7 @@ def saveLogoByUrl(url, fake_id):
     # print fake_id, "[ResponseSize]", len( data )
     if len( data ) == 0:
         return False
-    fout = open( "C:\\AppServ\\www\\img\\" + fake_id + ".jpg", 'wb')        
+    fout = open( "C:\\Program Files\\Apache Software Foundation\\Apache2.2\\htdocs\\img\\" + fake_id + ".jpg", 'wb')        
     fout.write( data )
     fout.close()
     

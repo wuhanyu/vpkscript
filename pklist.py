@@ -13,13 +13,13 @@ settings['MONGODB_DB']         = 'vpk-development'
 settings['MONGODB_RATE_COLLECTION'] = 'rates'
 settings['MONGODB_REC_COLLECTION'] = 'recs'
 settings['MONGODB_USER_COLLECTION'] = 'users'
-prefix = "C:\\AppServ\\www\\sound\\"
+prefix = "C:\\Program Files\\Apache Software Foundation\\Apache2.2\\htdocs\\sound\\"
 prefix_ori = prefix + "ori\\"
 prefix_pair = prefix + "pair\\"
 prefix_url = "http://124.16.139.178:8080/sound/"
 
 def mergemp3(filepath1, filepath2, outputpath):
-    cmd = "C:\Users\Simon@itechs\Desktop\sox-14.4.1\sox.exe A.mp3 %s B.mp3 %s %s" % (filepath1, filepath2, outputpath)
+    cmd = "sox.exe A.mp3 %s B.mp3 %s %s" % (filepath1, filepath2, outputpath)
     os.system(cmd)
 
 def getRecord(user, collection):
