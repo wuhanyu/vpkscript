@@ -7,19 +7,20 @@ import time
 
 settings = dict()
 
-settings['MONGODB_SERVER']     = '192.168.12.254'
+settings['MONGODB_SERVER']     = '124.16.139.143'
 settings['MONGODB_PORT']       = 27017
 settings['MONGODB_DB']         = 'vpk-development'
 settings['MONGODB_RATE_COLLECTION'] = 'rates'
 settings['MONGODB_REC_COLLECTION'] = 'recs'
 settings['MONGODB_USER_COLLECTION'] = 'users'
-prefix = "C:\\Program Files\\Apache Software Foundation\\Apache2.2\\htdocs\\sound\\"
-prefix_ori = prefix + "ori\\"
-prefix_pair = prefix + "pair\\"
+prefix = "C:/\"Program Files\"/\"Apache Software Foundation\"/Apache2.2/htdocs/sound/"
+prefix_ori = prefix + "ori/"
+prefix_pair = prefix + "pair/"
 prefix_url = "http://124.16.139.178:8080/sound/"
 
 def mergemp3(filepath1, filepath2, outputpath):
     cmd = "sox.exe A.mp3 %s B.mp3 %s %s" % (filepath1, filepath2, outputpath)
+    print cmd
     os.system(cmd)
 
 def getRecord(user, collection):

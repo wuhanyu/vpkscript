@@ -3,7 +3,7 @@ import logging
 
 settings = dict()
 
-settings['MONGODB_SERVER']     = '192.168.12.254'
+settings['MONGODB_SERVER']     = '124.16.139.143'
 settings['MONGODB_PORT']       = 27017
 settings['MONGODB_DB']         = 'vpk-development'
 
