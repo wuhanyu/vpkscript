@@ -3,8 +3,8 @@ import logging
 
 settings = dict()
 
-settings['MONGODB_SERVER']     = '124.16.139.143'
-settings['MONGODB_PORT']       = 27017
+settings['MONGODB_SERVER']     = '42.121.98.220'
+settings['MONGODB_PORT']       = 22222
 settings['MONGODB_DB']         = 'vpk-development'
 
 if __name__ == "__main__":

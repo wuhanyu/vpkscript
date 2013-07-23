@@ -7,8 +7,8 @@ import time
 
 settings = dict()
 
-settings['MONGODB_SERVER']     = '124.16.139.143'
-settings['MONGODB_PORT']       = 27017
+settings['MONGODB_SERVER']     = '42.121.98.220'
+settings['MONGODB_PORT']       = 22222
 settings['MONGODB_DB']         = 'vpk-development'
 settings['MONGODB_RATE_COLLECTION'] = 'rates'
 settings['MONGODB_REC_COLLECTION'] = 'recs'
@@ -43,7 +43,7 @@ def getFilepath(records):
     return result, output_path
 
 def getUrl(path):
-    return prefix_url + path.split("sound\\")[-1].replace("\\", "/")
+    return prefix_url + path.split("sound/")[-1].replace("\\", "/")
         
 if __name__ == '__main__':
     flag = True

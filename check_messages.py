@@ -17,8 +17,8 @@ PRE_RE_PROCESS = 100
 
 settings = dict()
 
-settings['MONGODB_SERVER']     = '124.16.139.143'
-settings['MONGODB_PORT']       = 27017
+settings['MONGODB_SERVER']     = '42.121.98.220'
+settings['MONGODB_PORT']       = 22222
 settings['MONGODB_DB']         = 'vpk-development'
 settings['MONGODB_USER_COLLECTION'] = 'users'
 settings['MONGODB_LOG_COLLECTION'] = 'log'
